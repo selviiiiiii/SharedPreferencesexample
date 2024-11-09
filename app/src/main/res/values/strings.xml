@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SharedPreferencesExample</string>
+    <string name="judul">Shared Preferences</string>
+    <string name="save_data">Save Data</string>
+    <string name="load_data">Load Data</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="output_data">Output Data</string>
+    <string name="next_activity">Next Activity</string>
+</resources>
+

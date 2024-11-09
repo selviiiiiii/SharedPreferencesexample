@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+    <LinearLayout
+        android:id="@+id/llInputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvJudul"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:autofillHints="" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llInputText"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:weightSum="9">
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/save_data"/>
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="@string/load_data"/>
+        <Button
+            android:id="@+id/btnSecondActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/next_activity"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/judul"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/output_data"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+</RelativeLayout>
+
